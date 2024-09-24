@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Here to analyze the text</title>
+
+
+</head>
+<body>
+<h1>Analyzed text : - {{ purpose }} </h1>
+<p>
+   {% for char, count in char_count.items %}
+    '{{ char }}' occurs {{ count }} times<br>
+{% endfor %}
+
+{{analyzed_text}}
+</p>
+</body>
+</html>
